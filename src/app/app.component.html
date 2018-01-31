@@ -92,7 +92,7 @@
 <nz-pagination [nzPageIndex]="1" [nzTotal]="50" nzSimple></nz-pagination>
 
 <!-- 步骤条 -->
-<!-- <nz-steps [(nzCurrent)]="current" [nzSize]="'small'">
+<nz-steps [(nzCurrent)]="current" [nzSize]="'small'">
   <nz-step [nzTitle]="'Finished'" [nzDescription]="'This is a description.'"></nz-step>
   <nz-step [nzTitle]="'In Progress'" [nzDescription]="nzDescription">
     <ng-template #nzIcon>
@@ -116,4 +116,4 @@
   <button nz-button [nzType]="'primary'" (click)="done()" *ngIf="current === 2">
     <span>Done</span>
   </button>
-</div> -->
+</div>
