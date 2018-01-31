@@ -1,5 +1,5 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+<!-- <div style="text-align:center">
   <h1>
     Welcome to {{ title }}!
   </h1>
@@ -16,5 +16,104 @@
   <li>
     <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
   </li>
-</ul>
+</ul> -->
 
+<button nz-button [nzType]="'primary'">primary</button>
+<button nz-button [nzType]="'default'">default</button>
+<button nz-button [nzType]="'dashed'">dashed</button>
+<button nz-button [nzType]="'danger'">danger</button>
+
+<!-- <button nz-button [nzType]="'primary'" [nzShape]="'circle'">
+  <i class="anticon anticon-search"></i>
+</button>
+<button nz-button [nzType]="'primary'" disabled>
+  <i class="anticon anticon-search"></i><span>Search</span>
+</button> -->
+
+<!-- <div style="background: rgb(190, 200, 200);padding: 26px 16px 16px;">
+  <button nz-button [nzType]="'primary'" [nzSize]="'large'" nzLoading nzGhost>
+    <span><i class="anticon anticon-poweroff"></i>Loading</span>
+  </button>
+  <button nz-button [nzType]="'primary'" (click)="loadOne($event)" [nzLoading]="isLoadingOne" nzGhost>
+    <span>Loading</span>
+  </button>
+</div> -->
+
+<!-- <div nz-row>
+  <div nz-col [nzSpan]="12">
+    col-12
+  </div>
+  <div nz-col [nzSpan]="12">
+    col-12
+  </div>
+</div>
+<div nz-row>
+  <div nz-col [nzSpan]="8">
+    col-8
+  </div>
+  <div nz-col [nzSpan]="8">
+    col-8
+  </div>
+  <div nz-col [nzSpan]="8">
+    col-8
+  </div>
+</div> -->
+<!-- <div class="gutter-example">
+  <div nz-row [nzGutter]="8">
+    <div nz-col class="gutter-row" [nzSpan]="6">
+      <div class="gutter-box">col-6</div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="6">
+      <div class="gutter-box">col-6</div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="6">
+      <div class="gutter-box">col-6</div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="6">
+      <div class="gutter-box">col-6</div>
+    </div>
+  </div>
+</div> -->
+
+<!-- <div nz-row [nzType]="'flex'">
+  <div nz-col [nzSpan]="6" [nzOrder]="order" *ngFor="let order of orderList; index as i">
+    {{i+1}} col-order-{{order}}
+  </div>
+</div> -->
+
+<!-- <div nz-row>
+  <div nz-col [nzSpan]="4" *ngFor="let order of generateArray(6)">
+    1
+  </div>
+</div> -->
+
+<!-- 分页 -->
+<!-- <nz-pagination [nzPageIndex]="1" [nzTotal]="500" nzShowSizeChanger [nzPageSize]="40" [nzSize]="'small'" nzShowTotal nzShowQuickJumper></nz-pagination>
+<nz-pagination [nzPageIndex]="1" [nzTotal]="50" nzSimple></nz-pagination> -->
+
+<!-- 步骤条 -->
+<!-- <nz-steps [(nzCurrent)]="current" [nzSize]="'small'">
+  <nz-step [nzTitle]="'Finished'" [nzDescription]="'This is a description.'"></nz-step>
+  <nz-step [nzTitle]="'In Progress'" [nzDescription]="nzDescription">
+    <ng-template #nzIcon>
+      <i class="anticon anticon-user"></i>
+    </ng-template>
+    <ng-template #nzDescription>
+      <p>This is a description.</p>
+      <nz-progress [ngModel]="30" [nzStrokeWidth]="5"></nz-progress>
+    </ng-template>
+  </nz-step>
+  <nz-step [nzTitle]="'Waiting'" [nzDescription]="'This is a description.'" [nzStatus]="'finish'"></nz-step>
+</nz-steps>
+<div class="steps-content">{{index}}</div>
+<div class="steps-action">
+  <button nz-button [nzType]="'default'" (click)="pre()" *ngIf="current > 0">
+    <span>Previous</span>
+  </button>
+  <button nz-button [nzType]="'default'" (click)="next()" *ngIf="current < 2">
+    <span>Next</span>
+  </button>
+  <button nz-button [nzType]="'primary'" (click)="done()" *ngIf="current === 2">
+    <span>Done</span>
+  </button>
+</div> -->
